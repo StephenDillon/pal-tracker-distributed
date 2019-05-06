@@ -10,3 +10,15 @@ ci/variables.yml
 integration-test/out/
 components/rest-support/out/
 components/test-support/out/
+applications/allocations-server/out/
+applications/backlog-server/out/
+applications/registration-server/out/
+applications/timesheets-server/out/
+components/accounts/out/
+components/allocations/out/
+components/backlog/out/
+components/projects/out/production/
+components/projects/out/
+components/timesheets/out/
+components/users/out/
+platform-services/eureka-server/out/
