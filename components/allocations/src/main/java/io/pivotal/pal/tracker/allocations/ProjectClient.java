@@ -18,6 +18,8 @@ public class ProjectClient {
 
     @HystrixCommand(fallbackMethod = "getProjectFromCache")
     public ProjectInfo getProject(long projectId) {
+        System.out.println(registrationServerEndpoint);
+
         ProjectInfo projectInfo = restOperations.getForObject(registrationServerEndpoint + "/projects/" + projectId, ProjectInfo.class);
         projectCache.put(projectId, projectInfo);
         return projectInfo;
