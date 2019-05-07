@@ -2,7 +2,7 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
+  - route: https://allocations-pal-dillos.cfapps.io
   memory: 1G
   instances: 1
   env:
@@ -12,4 +12,4 @@ applications:
   - tracker-allocations-database
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
-  - tracker-sso
+  - dillos-uaa
