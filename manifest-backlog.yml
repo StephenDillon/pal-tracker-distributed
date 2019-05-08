@@ -8,16 +8,16 @@ applications:
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     GRANT_TYPE: client_credentials
+    security:
+      oauth2:
+        client:
+          client-id: tracker-client
+          client-secret: supersecret
+          access-token-uri: https://dillos-uaa.cfapps.io/oauth/token
+          user-authorization-uri: https://dillos-uaa.cfapps.io/oauth/authorize
+        resource:
+          user-info-uri: https://dillos-uaa.cfapps.io/me
   services:
   - tracker-backlog-database
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
-  security:
-    oauth2:
-      client:
-        client-id: tracker-client
-        client-secret: supersecret
-        access-token-uri: https://dillos-uaa.cfapps.io/oauth/token
-        user-authorization-uri: https://dillos-uaa.cfapps.io/oauth/authorize
-      resource:
-        user-info-uri: https://dillos-uaa.cfapps.io/me
