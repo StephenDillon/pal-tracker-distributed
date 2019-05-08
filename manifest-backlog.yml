@@ -12,6 +12,7 @@ applications:
   - tracker-backlog-database
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
+  - dillos-uaa
   logging:
     level:
       org.springframework.security: DEBUG
