@@ -13,3 +13,10 @@ applications:
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
   - dillos-uaa
+  security:
+    oauth2:
+      client:
+        client-id: client
+        client-secret: supersecret
+        token-info-uri: https://dillos-uaa.cfapps.io/oauth/check_token
+        access-token-uri: https://dillos-uaa.cfapps.io/oauth/access_token
