@@ -12,4 +12,12 @@ applications:
   - tracker-allocations-database
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
-  - dillos-uaa
+  security:
+    oauth2:
+      client:
+        client-id: tracker-client
+        client-secret: supersecret
+        access-token-uri: https://dillos-uaa.cfapps.io/oauth/token
+        user-authorization-uri: https://dillos-uaa.cfapps.io/oauth/authorize
+      resource:
+        user-info-uri: https://dillos-uaa.cfapps.io/me
