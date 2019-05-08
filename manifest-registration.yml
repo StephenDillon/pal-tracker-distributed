@@ -11,14 +11,6 @@ applications:
   services:
   - tracker-registration-database
   - tracker-service-registry
-  security:
-    oauth2:
-      client:
-        client-id: tracker-client
-        client-secret: supersecret
-        access-token-uri: https://dillos-uaa.cfapps.io/oauth/access_token
-      resource:
-        token-info-uri: https://dillos-uaa.cfapps.io/oauth/check_token
   logging:
     level:
       org.springframework.security: DEBUG
