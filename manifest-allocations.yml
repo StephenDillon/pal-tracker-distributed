@@ -12,7 +12,4 @@ applications:
   - tracker-allocations-database
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
-  logging:
-    level:
-      org.springframework.security: DEBUG
-      org.springframework.web: DEBUG
+  - tracker-config-server
